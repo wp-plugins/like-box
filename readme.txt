@@ -25,16 +25,17 @@ Features of Facebook like box:
 
 == Installation ==
 
-That's simple:
-1. Download Facebook like box plugin.
-2. Upload the Facebook like box plugin from your admin panel.
-3. Activate the plugin.
-4. Add Facebook like box widget to your sidebar.
+### That's simple:
+
+1. Download Facebook like box plugin.   
+2. Upload the Facebook like box plugin from your admin panel.    
+3. Activate the plugin. 
+4. Add Facebook like box widget to your sidebar.     
 
 == Screenshots ==
 
-1.Facebook Like box Front-end.
-2.Facebook Like box Back-end.
+1.  Facebook Like box Front-end    
+2.  Facebook Like box Back-end   
 
 == Changelog ==
 
