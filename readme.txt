@@ -1,0 +1,42 @@
+=== Like box Facebook ===
+Contributors: smplug-in
+Tags: Facebook, facebook badge, facebook connect, Facebook fan page, facebook group, facebook integration, facebook like box, Facebook like widget, facebook meta, facebook meta tag, Facebook Open Graph, Facebook Page, facebook platform, facebook plugin, facebook recommend, facebook share, facebook sidebar, facebook style, facebook wall, Facebook Widget, friends, google +1, google plus, google plus one, Like, like box, open graph, page, plugin, post to facebook, sharebar, sidebar, social, Social Plugins, social profiles, social share, social sidebar, wordpress like
+Requires at least: 2.9
+Tested up to: 4.0
+Stable tag: 1.0
+
+This plugin will show your Facebook like box, just add Like box widget to your sidebar and use it.
+
+== Description ==
+
+Facebook Like box is awesome tool to show your visitors your Facebook like box. At the same time it's very useful, because you will get new users who will like your website. 
+It's very easy to use, you just need to install the plugin and add like box widget to your sidebar and set some settings(Page ID, like box width, height ...).
+
+Features of Facebook like box:
+
+* User friendly and easy to use.
+* Tested with other popular plugins.
+* Ability to set number of posts to show from your Facebook page(also you can hide your posts).
+* Ability to set connections number.
+* Ability to set like box width.
+* Ability to set like box height.
+* Ability to show/hide Facebook logo bar.
+* Ability to change like box language.
+
+== Installation ==
+
+That's simple
+1. Download Facebook like box plugin
+2. Upload the Facebook like box plugin from your admin panel
+3. Activate the plugin
+4. Add Facebook like box widget to your sidebar
+
+== Screenshots ==
+
+1.Facebook Like box Front-end
+2.Facebook Like box Back-end
+
+== Changelog ==
+
+= 1.0 =
+*  Initial version.
