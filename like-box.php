@@ -1,6 +1,6 @@
 <?php 
 /*
-Plugin Name: Like box Facebook
+Plugin Name: Facebook Like Box
 Plugin URI: https://wordpress.org/plugins/like-box
 Description: This plugin will show your Facebook like box, just add Like box widget to your sidebar and use it.
 Version: 1.0
