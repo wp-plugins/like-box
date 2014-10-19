@@ -9,8 +9,8 @@ This plugin will show your Facebook like box, just add Like box widget to your s
 
 == Description ==
 
-Facebook Like box is awesome tool to show your visitors your Facebook like box. At the same time it's very useful, because you will get new users who will like your website. 
-It's very easy to use, you just need to install the plugin and add like box widget to your sidebar and set some settings(Page ID, like box width, height ...).
+Facebook Like box is awesome tool to show your visitors your Facebook like box. At the same time it's very useful, because you will get new users who will like your website on Facebook. Facebook like box is important part of social optimization, that's why a lot of people use Facebook like box on their websites.
+It's very easy to use, you just need to install the plugin and add Facebook like box widget to your sidebar and set some settings(Page ID, Facebook like box width, height ...).
 
 Features of Facebook like box:
 
