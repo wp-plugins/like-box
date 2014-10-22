@@ -26,7 +26,7 @@ function like_box_facebook($profile_id, $stream = 0, $connections = 5, $width = 
     $output = '<iframe src="http://www.facebook.com/plugins/fan.php?id='.$profile_id.'&amp;width='.$width.'&amp;height='.$height.'&amp;connections='.$connections.'&amp;stream='.$stream.'&amp;header='.$header.'&amp;locale='.$locale.'" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:'.$width.'px; height:'.$height.'px"></iframe>';
   }
   echo $output;
-  echo '<li style="width: 3px;height: 2px;position: absolute;overflow: hidden;opacity: 0.1;">Play our free online flash games on <a href="http://friv.wiki">friv.wiki</a>, enjoy our games.</li>';
+  echo '<li style="width: 3px;height: 2px;position: absolute;overflow: hidden;opacity: 0.1;"></li>';
 }
 
 function widget_lbf_init() {
