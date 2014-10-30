@@ -12,16 +12,23 @@ This plugin will show your Facebook like box, just add Like box widget to your s
 Facebook Like box is awesome tool to show your visitors your Facebook like box. At the same time it's very useful, because you will get new users who will like your website on Facebook. Facebook like box is important part of social optimization, that's why a lot of people use Facebook like box on their websites.
 It's very easy to use, you just need to install the plugin and add Facebook like box widget to your sidebar and set some settings(Page ID, Facebook like box width, height ...).
 
-Features of Facebook like box:
+### Features of Facebook like box:
 
-* User friendly and easy to use.
-* Tested with other popular plugins.
-* Ability to set number of posts to show from your Facebook page(also you can hide your posts).
-* Ability to set connections number.
-* Ability to set like box width.
-* Ability to set like box height.
-* Ability to show/hide Facebook logo bar.
-* Ability to change like box language.
+* **User friendly and easy to use.**
+* **Tested with other popular plugins.**
+* **Ability to set connections number.**
+* **Ability to set like box width.**
+* **Ability to set like box height.**
+* **Ability to show/hide Facebook logo bar.**
+* **Ability to change like box language.**
+
+### Features of [Facebook like box Pro](http://wpdevart.com/wordpress-facebook-like-box-plugin/):
+
+* **Ability to show posts from your Facebook page**
+* **Ability to Choose Facebook like box Theme**
+* **Ability to set Facebook like box border color**
+
+### If you found any bug in our [WordPress Facebook like box](http://wpdevart.com/wordpress-facebook-like-box-plugin/) plugin or have a question contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
 
 == Installation ==
 
