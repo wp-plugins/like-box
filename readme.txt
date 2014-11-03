@@ -27,6 +27,7 @@ It's very easy to use, you just need to install the plugin and add Facebook like
 * **Ability to show posts from your Facebook page**
 * **Ability to Choose Facebook like box Theme**
 * **Ability to set Facebook like box border color**
+* **Premium Support**
 
 ### If you found any bug in our [WordPress Facebook like box](http://wpdevart.com/wordpress-facebook-like-box-plugin/) plugin or have a question contact us at [support@wpdevart.com](mailto:support@wpdevart.com).
 
