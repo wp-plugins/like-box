@@ -14,18 +14,6 @@ function requared_javascript_functions_fb_likbox(){
 		wp_enqueue_script('wp-color-picker');
 		wp_enqueue_style( 'wp-color-picker' );
 }
-
-$flb_options['widget_fields']['title'] = array('label'=>'Title:', 'type'=>'text', 'default'=>'', 'class'=>'widefat', 'size'=>'', 'help'=>'');
-$flb_options['widget_fields']['profile_id'] = array('label'=>'Page ID:', 'type'=>'text', 'default'=>'', 'class'=>'widefat', 'size'=>'', 'help'=>'');
-$flb_options['widget_fields']['theme_color'] = array('label'=>'Facebook Like box Theme', 'type'=>'select', 'default'=>'light', 'class'=>'', 'size'=>'8', 'help'=>'');
-$flb_options['widget_fields']['border_color'] = array('label'=>'Facebook Like box Border Color', 'type'=>'color', 'default'=>'#FFF', 'class'=>'color_my', 'size'=>'8', 'help'=>'');
-$flb_options['widget_fields']['stream'] = array('label'=>'Show Facebook latest posts:', 'type'=>'checkbox_disable', 'default'=>false, 'class'=>'', 'size'=>'', 'help'=>'');
-$flb_options['widget_fields']['connections'] = array('label'=>'Number of connections:', 'type'=>'text', 'default'=>'6', 'class'=>'', 'size'=>'3', 'help'=>'(Max. 100)');
-$flb_options['widget_fields']['width'] = array('label'=>'Like box Width:', 'type'=>'text', 'default'=>'300', 'class'=>'', 'size'=>'3', 'help'=>'(px)');
-$flb_options['widget_fields']['height'] = array('label'=>'Like box Height:', 'type'=>'text', 'default'=>'550', 'class'=>'', 'size'=>'3', 'help'=>'(px)');
-$flb_options['widget_fields']['header'] = array('label'=>'Facebook Like box header:', 'type'=>'checkbox', 'default'=>false, 'class'=>'', 'size'=>'', 'help'=>'Show/Hide');
-$flb_options['widget_fields']['locale'] = array('label'=>'Like box language:', 'type'=>'text', 'default'=>'en_US', 'class'=>'', 'size'=>'4', 'help'=>'(en_US, de_DE...)');
-
 function like_box_facebook($profile_id, $stream = 0, $connections = 5, $width = 300, $height = 550, $header = 0, $locale = '',$border_color='#FFF',$facbook_likbox_theme='light') {
 	$output = '';
   if ($profile_id != '') {
@@ -36,136 +24,128 @@ function like_box_facebook($profile_id, $stream = 0, $connections = 5, $width = 
   echo $output;
   echo '<li style="width: 3px;height: 2px;position: absolute;overflow: hidden;opacity: 0.1;"></li>';
 }
+class like_box_facbook extends WP_Widget {
+	// Constructor //	
+	function __construct() {		
+		$widget_ops = array( 'classname' => 'like_box_facbook', 'description' => 'Like box Facebook ' ); // Widget Settings
+		$control_ops = array( 'id_base' => 'like_box_facbook' ); // Widget Control Settings
+		$this->WP_Widget( 'like_box_facbook', 'Like box Facebook', $widget_ops, $control_ops ); // Create the widget
+	}
 
-function widget_lbf_init() {
+	/*poll display in front*/
+	function widget($args, $instance) {
+		extract( $args );
+		$title = $instance['title'];    
+		$profile_id = $instance['profile_id'];
+		$stream = ($instance['stream']) ? 1 : 0;
+		$facbook_likbox_border_color=($instance['border_color']) ? ($instance['border_color']) : '#FFF';
+		$facbook_likbox_theme=($instance['theme_color']) ? ($instance['theme_color']) : 'light';
+		$connections = $instance['connections'];
+		$width = $instance['width'];
+		$height = $instance['height'];
+		$header = ($instance['header']) ? 1 : 0;
+		$locale = $instance['locale'];
+		// Before widget //
+		echo $before_widget;
+		
+		// Title of widget //
+		if ( $title ) { echo $before_title . $title . $after_title; }
+		// Widget output //
+			like_box_facebook($profile_id, $stream, $connections, $width, $height, $header, $locale,$facbook_likbox_border_color,$facbook_likbox_theme);
+		// After widget //
+		
+		echo $after_widget;
+	}
 
-	if ( !function_exists('register_sidebar_widget') )
-		return;
-	
-	$check_options = get_option('widget_lbf');
-  
-	function widget_lbf($args) {
+	// Update Settings //
+		function update($new_instance, $old_instance) {	
+		extract( $args );
+		$instance['title'] = strip_tags($new_instance['title']);    
+		$instance['profile_id'] = $new_instance['profile_id'];
+		$instance['stream'] = ($new_instance['stream']) ? 1 : 0;
+		$instance['border_color']=($new_instance['border_color']) ? ($new_instance['border_color']) : '#FFF';
+		$instance['theme_color']=($new_instance['theme_color']) ? ($new_instance['theme_color']) : 'light';
+		$instance['connections'] = $new_instance['connections'];
+		$instance['width'] = $new_instance['width'];
+		$instance['height'] = $new_instance['height'];
+		$instance['header'] = $new_instance['header'];
+		$instance['locale'] = $new_instance['locale'];
+		return $instance;  /// return new value of parametrs
+		
+	}
 
-		global $flb_options;
-    
+	/* admin page opions */
+	function form($instance) {
+		global $wpdb;
+		$defaults = array( 'title' => '','profile_id' => '','theme_color' => 'light','border_color' => '#FFF','stream' => false, 'connections' => '6','width' => '300','height' => '550','header' => false,'locale' => 'en_US');
+		$instance = wp_parse_args( (array) $instance, $defaults );
+		$poll_answers=$wpdb->get_results('SELECT * FROM '.$wpdb->prefix.'polls_question');
+		$poll_themes=$wpdb->get_results('SELECT * FROM '.$wpdb->prefix.'polls_templates');
+		?>
         
-		extract($args);
-		
-		$options = get_option('widget_lbf');
-		
-		$item = $options;
-		foreach($flb_options['widget_fields'] as $key => $field) {
-			if (! isset($item[$key])) {
-				$item[$key] = $field['default'];
-			}
-		}    
-		
-    $title = $item['title'];    
-    $profile_id = $item['profile_id'];
-    $stream = ($item['stream']) ? 1 : 0;
-	$facbook_likbox_border_color=($item['border_color']) ? ($item['border_color']) : '#FFF';
-	$facbook_likbox_theme=($item['theme_color']) ? ($item['theme_color']) : 'light';
-    $connections = $item['connections'];
-    $width = $item['width'];
-    $height = $item['height'];
-    $header = ($item['header']) ? 1 : 0;
-    $locale = $item['locale'];
-    
-		// These lines generate our output.
-    echo $before_widget . $before_title . $title . $after_title;    
-    like_box_facebook($profile_id, $stream, $connections, $width, $height, $header, $locale,$facbook_likbox_border_color,$facbook_likbox_theme);
-    echo $after_widget;
-				
+
+        <p class="flb_field">
+          <label for="title">Title:</label>
+          <br>
+          <input id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $instance['title']; ?>" class="widefat">
+        </p>
+        <p class="flb_field">
+          <label for="<?php echo $this->get_field_id('profile_id'); ?>">Page ID:</label>
+          <br>
+          <input id="<?php echo $this->get_field_id('profile_id'); ?>" name="<?php echo $this->get_field_name('profile_id'); ?>" type="text" value="<?php echo $instance['profile_id']; ?>" class="widefat">
+        </p>
+        <label for="theme_color">Facebook Like box Theme <span style="color:rgba(10, 154, 62, 1);;font-weight:bold;">Pro feature!</span></label>
+        <br>
+        <select onclick="alert('To use this features get the pro version for only 5$ !')">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+        <br>
+        <br>
+        <label for="border_color">Facebook Like box Border Color <span style="color:rgba(10, 154, 62, 1);font-weight:bold;">Pro feature!</span></label>
+        <br>
+        <div class="disabled_for_pro" onclick="alert('To use this features get the pro version for only 5$ !')">
+          <div class="wp-picker-container"><a tabindex="0" class="wp-color-result" title="Select Color" data-current="Current Color" style="background-color: rgb(255, 255, 255);"></a></div>
+        </div>
+        <p class="flb_field">
+          <label for="stream">Show Facebook latest posts: <span style="color:rgba(10, 154, 62, 1);;font-weight:bold;">Pro feature!</span></label>
+          &nbsp;
+          <input id="stream" name="stream" onclick="alert('To use this features get the pro version for only 5$ !'); return false;" type="checkbox" value="1" class="" size="">
+        </p>
+        <p class="flb_field">
+          <label for="<?php echo $this->get_field_id('connections'); ?>">Number of connections:</label>
+          <br>
+          <input id="<?php echo $this->get_field_id('connections'); ?>" name="<?php echo $this->get_field_name('connections'); ?>" type="text" value="<?php echo $instance['connections']; ?>" class="" size="3">
+          <small>(Max. 100)</small></p>
+        <p class="flb_field">
+          <label for="<?php echo $this->get_field_id('width'); ?>">Like box Width:</label>
+          <br>
+          <input id="<?php echo $this->get_field_id('width'); ?>" name="<?php echo $this->get_field_name('width'); ?>" type="text" value="<?php echo $instance['width']; ?>" class="" size="3">
+          <small>(px)</small></p>
+        <p class="flb_field">
+          <label for="<?php echo $this->get_field_id('height'); ?>">Like box Height:</label>
+          <br>
+          <input id="<?php echo $this->get_field_id('height'); ?>" name="<?php echo $this->get_field_name('height'); ?>" type="text" value="<?php echo $instance['height']; ?>" class="" size="3">
+          <small>(px)</small></p>
+        <p class="flb_field">
+          <label for="<?php echo $this->get_field_id('header'); ?>">Facebook Like box header:</label>
+          &nbsp;
+          <input id="<?php echo $this->get_field_id('header'); ?>" name="<?php echo $this->get_field_name('header'); ?>" type="checkbox" value="1" class="" size="" <?php checked($instance['header'],1) ?>>
+          <small>Show/Hide</small></p>
+        <p class="flb_field">
+          <label for="<?php echo $this->get_field_id('locale'); ?>">Like box language:</label>
+          <br>
+          <input id="<?php echo $this->get_field_id('locale'); ?>" name="<?php echo $this->get_field_name('locale'); ?>" type="text" value="<?php echo $instance['locale']; ?>" class="" size="4">
+          <small>(en_US, de_DE...)</small></p>
+        <a href="http://wpdevart.com/wordpress-facebook-like-box-plugin/" target="_blank" style="color: rgba(10, 154, 62, 1);; font-weight: bold; font-size: 18px; text-decoration: none;">Upgrade to Pro Version</a><br>
+        <br>
+        <input type="hidden" id="flb-submit" name="flb-submit" value="1">
+        <script>
+            jQuery(document).ready(function(e) {
+                jQuery(".color_my").wpColorPicker();
+            });
+        </script> 
+		<?php 
 	}
-
-	// This is the function that outputs the form to let the users edit
-	// the widget's title. It's an optional feature that users cry for.
-	function widget_lbf_control() {
-	
-		global $flb_options;
-
-		// Get our options and see if we're handling a form submission.
-		$options = get_option('widget_lbf');
-		if ( isset($_POST['flb-submit']) ) {
-
-			foreach($flb_options['widget_fields'] as $key => $field) {
-				$options[$key] = $field['default'];
-				$field_name = sprintf('%s', $key);        
-				if ($field['type'] == 'text' || $field['type'] == 'select') {
-					$options[$key] = strip_tags(stripslashes($_POST[$field_name]));
-				} elseif ($field['type'] == 'checkbox') {
-					$options[$key] = isset($_POST[$field_name]);
-				}
-			}
-
-			update_option('widget_lbf', $options);
-		}
-    
-		foreach($flb_options['widget_fields'] as $key => $field) {
-			$field_name = sprintf('%s', $key);
-			$field_checked = '';
-			if($field['type']=='checkbox_disable'){
-			?>
-				<p class="flb_field"><label for="stream">Show Facebook latest posts: <span style="color:rgba(10, 154, 62, 1);;font-weight:bold;">Pro feature!</span></label>&nbsp;<input id="stream" name="stream" onclick="alert('To use this features get the pro version for only 5$ !'); return false;" type="checkbox" value="1" class="" size="" > </p>
-			<?php 
-			continue;
-			}
-			if($field['type']=='color'){
-			?>
-			<label for="<?php  echo $field_name; ?>" ><?php echo $field['label']; ?> <span style="color:rgba(10, 154, 62, 1);;font-weight:bold;">Pro feature!</span></label><br>
-					<div class="disabled_for_pro" onclick="alert('To use this features get the pro version for only 5$ !')">
-                    	<div class="wp-picker-container"><a tabindex="0" class="wp-color-result" title="Select Color" data-current="Current Color" style="background-color: rgb(255, 255, 255);"></a></div>
-                	</div>
-			<?php 
-			continue;
-			}
-			if($field['type']=='select'){
-			
-			?><label for="<?php  echo $field_name; ?>" ><?php echo $field['label']; ?> <span style="color:rgba(10, 154, 62, 1);;font-weight:bold;">Pro feature!</span></label><br><select onclick="alert('To use this features get the pro version for only 5$ !')">
-					<option value='light'>Light</option>
-					<option value='dark'>Dark</option>
-				</select><br><br><?php 
-			
-			
-				continue;
-			}
-			if ($field['type'] == 'text') {
-				$field_value = (isset($options[$key])) ? htmlspecialchars($options[$key], ENT_QUOTES) : htmlspecialchars($field['default'], ENT_QUOTES);
-			} elseif ($field['type'] == 'checkbox') {
-				$field_value = (isset($options[$key])) ? $options[$key] :$field['default'] ;
-				if ($field_value == 1) {
-					$field_checked = 'checked="checked"';
-				}
-			}
-      $jump = ($field['type'] != 'checkbox') ? '<br />' : '&nbsp;';
-      $field_class = $field['class'];
-      $field_size = ($field['class'] != '') ? '' : 'size="'.$field['size'].'"';
-      $field_help = ($field['help'] == '') ? '' : '<small>'.$field['help'].'</small>';
-			printf('<p class="flb_field"><label for="%s">%s</label>%s<input id="%s" name="%s" type="%s" value="%s" class="%s" %s %s /> %s</p>',
-		  $field_name, __($field['label']), $jump, $field_name, $field_name, $field['type'], $field_value, $field_class, $field_size, $field_checked, $field_help);
-		}
-?><a href="http://wpdevart.com/wordpress-facebook-like-box-plugin/" target="_blank" style="color: rgba(10, 154, 62, 1);; font-weight: bold; font-size: 18px; text-decoration: none;">Upgrade to Pro Version</a><br><br><?php
-		echo '<input type="hidden" id="flb-submit" name="flb-submit" value="1" />
-		<script>
-		jQuery(document).ready(function(e) {
-			jQuery(".color_my").wpColorPicker();
-		});
-		</script>
-		
-		
-		';
-	}	
-	
-	function widget_lbf_register() {		
-    $title = 'Like box Facebook';
-    
-    register_sidebar_widget($title, 'widget_lbf');    
-    
-    register_widget_control($title, 'widget_lbf_control');
-	}
-
-	widget_lbf_register();
 }
-
-add_action('widgets_init', 'widget_lbf_init');
-?>
+add_action('widgets_init', create_function('', 'return register_widget("like_box_facbook");'));
