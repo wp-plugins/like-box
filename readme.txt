@@ -1,6 +1,6 @@
 === Facebook Like Box ===
 Contributors: smplug-in
-Tags: Facebook, facebook badge, facebook connect, Facebook fan page, facebook group, facebook integration, facebook like box, Facebook like widget, facebook meta, facebook meta tag, Facebook Open Graph, Facebook Page, facebook platform, facebook plugin, facebook recommend, facebook share, facebook sidebar, facebook style, facebook wall, Facebook Widget, friends, google +1, google plus, google plus one, Like, like box, open graph, page, plugin, post to facebook, sharebar, sidebar, social, Social Plugins, social profiles, social share, social sidebar, wordpress like, seo, meta, Facebook like box widget, facebook like,  facebook like button, facebook button, facebook facepile, like box facebook, like box widget, bing         
+Tags: Facebook, facebook badge, facebook connect, Facebook fan page, facebook group, facebook integration, facebook like box, Facebook like widget, facebook meta, facebook meta tag, Facebook Open Graph, Facebook Page, facebook platform, facebook plugin, facebook recommend, facebook share, facebook sidebar, facebook style, facebook wall, Facebook Widget, friends, google +1, google plus, google plus one, Like, like box, open graph, page, plugin, post to facebook, sharebar, sidebar, social, Social Plugins, social profiles, social share, social sidebar, wordpress like, seo, meta, Facebook like box widget, facebook like,  facebook like button, facebook button, facebook facepile, like box facebook, like box widget, google, bing    
 Requires at least: 2.9
 Tested up to: 4.0
 Stable tag: 1.0
@@ -31,19 +31,27 @@ It's very easy to use, you just need to install the plugin and add Facebook like
 
 ### If you found any bug in our [WordPress Facebook like box](http://wpdevart.com/wordpress-facebook-like-box-plugin/) plugin or have a question **[CONTACT US](http://wpdevart.com/contact-us)**.
 
+Dear users, we also recommend you to take a look for this useful plugins.
+- [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/)
+- [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/)
+
 == Installation ==
 
 ### That's simple:
 
-1. Download Facebook like box plugin.   
+1. Download [WordPress Facebook like box](https://wordpress.org/plugins/like-box/) plugin.   
 2. Upload the Facebook like box plugin from your admin panel.    
 3. Activate the plugin. 
 4. Add Facebook like box widget to your sidebar.     
 
+Dear users, also we recommend you to take a look for this useful plugins.
+- [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/)
+- [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/)
+
 == Screenshots ==
 
-1.  Facebook Like box Front-end    
-2.  Facebook Like box Back-end   
+1.  [WordPress Facebook like box](https://wordpress.org/plugins/like-box/) Front-end    
+2.  WordPress Facebook Like box Back-end   
 
 == Changelog ==
 
