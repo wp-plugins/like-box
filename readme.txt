@@ -31,9 +31,7 @@ It's very easy to use, you just need to install the plugin and add Facebook like
 
 ### If you found any bug in our [WordPress Facebook like box](http://wpdevart.com/wordpress-facebook-like-box-plugin/) plugin or have a question **[CONTACT US](http://wpdevart.com/contact-us)**.
 
-Dear users, we also recommend you to take a look for this useful plugins.
-- [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/)
-- [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/)
+Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/) .
 
 == Installation ==
 
@@ -44,9 +42,7 @@ Dear users, we also recommend you to take a look for this useful plugins.
 3. Activate the plugin. 
 4. Add Facebook like box widget to your sidebar.     
 
-Dear users, also we recommend you to take a look for this useful plugins.
-- [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/)
-- [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/)
+Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/) .
 
 == Screenshots ==
 
