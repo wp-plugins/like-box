@@ -1,6 +1,6 @@
 === Facebook Like Box ===
 Contributors: smplug-in
-Tags: Facebook, facebook badge, facebook connect, Facebook fan page, facebook group, facebook integration, facebook like box, Facebook like widget, facebook meta, facebook meta tag, Facebook Open Graph, Facebook Page, facebook platform, facebook plugin, facebook recommend, facebook share, facebook sidebar, facebook style, facebook wall, Facebook Widget, friends, google +1, google plus, google plus one, Like, like box, open graph, page, plugin, post to facebook, sharebar, sidebar, social, Social Plugins, social profiles, social share, social sidebar, wordpress like, seo, meta, Facebook like box widget, facebook like,  facebook like button, facebook button, facebook facepile, like box facebook, like box widget, google, bing    
+Tags: Facebook, facebook badge, facebook connect, Facebook fan page, facebook group, facebook integration, facebook like box, Facebook like widget, facebook meta, facebook meta tag, Facebook Open Graph, Facebook Page, facebook platform, facebook plugin, facebook recommend, facebook share, facebook sidebar, facebook style, facebook wall, Facebook Widget, friends, google +1, google plus, google plus one, Like, like box, open graph, page, plugin, post to facebook, sharebar, sidebar, social, Social Plugins, social profiles, social share, social sidebar, wordpress like, seo, meta, Facebook like box widget, facebook like,  facebook like button, facebook button, facebook facepile, like box facebook, like box widget, facebook likebox, facebook like box shortcode, likebox, wordpress facebook like box, facebook like box in PopUp, facebook likebox widget, nice facebook like box, custom facebook likebox, rt facebook like box, advanced responsive facebook likebox, fb like box, facebook like box shortcodes, like box sidebox    
 Requires at least: 2.9
 Tested up to: 4.0
 Stable tag: 1.0
@@ -17,10 +17,10 @@ It's very easy to use, you just need to install the plugin and add Facebook like
 * **User friendly and easy to use.**
 * **Tested with other popular plugins.**
 * **Ability to set connections number.**
-* **Ability to set like box width.**
-* **Ability to set like box height.**
+* **Ability to set Facebook like box width.**
+* **Ability to set Facebook like box height.**
 * **Ability to show/hide Facebook logo bar.**
-* **Ability to change like box language.**
+* **Ability to change Facebook like box language.**
 
 ### Features of [Facebook like box Pro](http://wpdevart.com/wordpress-facebook-like-box-plugin/):
 
@@ -39,7 +39,7 @@ Dear users, we also recommend you to take a look for this useful plugins - [Word
 
 1. Download [WordPress Facebook like box](https://wordpress.org/plugins/like-box/) plugin.   
 2. Upload the Facebook like box plugin from your admin panel.    
-3. Activate the plugin. 
+3. Activate the Facebook like box plugin. 
 4. Add Facebook like box widget to your sidebar.     
 
 Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/) .
@@ -52,4 +52,5 @@ Dear users, we also recommend you to take a look for this useful plugins - [Word
 == Changelog ==
 
 = 1.0 =
-*  Initial version.
+
+*  Initial version of Facebook like box.
