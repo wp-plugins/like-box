@@ -54,3 +54,19 @@ Dear users, we also recommend you to take a look for this useful plugins - [Word
 = 1.0 =
 
 *  Initial version of Facebook like box.
+
+==Wordpress Facebook like box step by step guide==
+
+### Facebook like box options
+
+*   Page ID:  - Type here your Facebook like box page url(without https://www.facebook.com/, if your Facebook like box page url is https://www.facebook.com/uefacom then type here just uefacom).
+*   Facebook Like box Theme - Choose theme for your Facebook Like box
+*   Facebook Like box Border Color - Type the Border Color of your Facebook Like box
+*   Show Facebook latest posts - Show or hide the latest posts from your Facebook Like box
+*   Number of connections - Type the number of connections that you want to see in your Facebook Like box
+*   Like box Width - Type Facebook Like box width
+*   Like box Height - Type Facebook Like box height
+*   Facebook Like box header - Show or hide the Facebook Like box header
+*   Like box language - Type the Facebook Like box language code
+
+Install the plugin and add Facebook like box widget to your sidebar. That's all, now your users can see your Facebook like box.
