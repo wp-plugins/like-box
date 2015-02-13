@@ -39,7 +39,7 @@ You can upgrade WordPress Facebook like box plugin to [Facebook like box Pro](ht
 
 ### If you found any bug in our WordPress Facebook like box plugin or have a question contact us at support@wpdevart.com.
 
-Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/) .
+Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2) .
 
 == Installation ==
 
@@ -52,7 +52,7 @@ Dear users, we also recommend you to take a look for this useful plugins - [Word
 5. Add Facebook like box in posts/pages using shortcode button.  
 6. Add Facebook like box Popup from admin panel.
 
-Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/) .
+Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2).
 
 == Screenshots ==
 
@@ -95,4 +95,4 @@ Then just set up options for Facebook like box Popup.
 *   Facebook Like box header - Show or hide the Facebook Like box header
 *   Like box language - Type the Facebook Like box language code
 
-
+Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/),  [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2) .
