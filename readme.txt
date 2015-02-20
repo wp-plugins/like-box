@@ -67,6 +67,10 @@ Dear users, we also recommend you to take a look for this useful plugins - [Word
 
 *  Initial version of Facebook like box.
 
+= 0.5.1 =
+
+*  Edited titles of some fields 
+
 ==Wordpress Facebook like box step by step guide==
 
 ### Adding Facebook like box to your sidebar. 
