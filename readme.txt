@@ -2,8 +2,8 @@
 Contributors: smplug-in
 Tags: Facebook, facebook badge, facebook connect, Facebook fan page, facebook group, facebook integration, facebook like box, Facebook like widget, facebook meta, facebook meta tag, Facebook Open Graph, Facebook Page, facebook platform, facebook plugin, facebook recommend, facebook share, facebook sidebar, facebook style, facebook wall, Facebook Widget, friends, google +1, google plus, google plus one, Like, like box, open graph, page, plugin, post to facebook, sharebar, sidebar, social, Social Plugins, social profiles, social share, social sidebar, wordpress like, seo, meta, Facebook like box widget, facebook like,  facebook like button, facebook button, facebook facepile, like box facebook, like box widget, facebook likebox, facebook like box shortcode, likebox, wordpress facebook like box, facebook like box in PopUp, facebook likebox widget, nice facebook like box, custom facebook likebox, rt facebook like box, advanced responsive facebook likebox, fb like box, facebook like box shortcodes, like box sidebox    
 Requires at least: 2.9
-Tested up to: 4.1
-Stable tag: 0.5.0
+Tested up to: 4.1.1
+Stable tag: 0.5.1
 
 Our Facebook like box plugin will help you to display Facebook like box on your wesite, just add Facebook Like box widget to your sidebar and use it. Also you can use Facebook Like box on your pages/posts and create Facebook Like box popup for your website. 
 
@@ -52,7 +52,7 @@ Dear users, we also recommend you to take a look for this useful plugins - [Word
 5. Add Facebook like box in posts/pages using shortcode button.  
 6. Add Facebook like box Popup from admin panel.
 
-Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2).
+Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/),  [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2) .
 
 == Screenshots ==
 
@@ -63,7 +63,7 @@ Dear users, we also recommend you to take a look for this useful plugins - [Word
 
 == Changelog ==
 
-= 1.0 =
+= 0.5.0 =
 
 *  Initial version of Facebook like box.
 
@@ -84,7 +84,7 @@ Then just set up options for Facebook like box Popup.
 
 ### Facebook like box options
 
-*   Page ID:  - Type here your Facebook like box page url(without https://www.facebook.com/, if your Facebook like box page url is https://www.facebook.com/uefacom then type here just uefacom).
+*   Page ID:  - Type here your Facebook like box page url(without https://www.facebook.com/, if your Facebook page url is https://www.facebook.com/uefacom then type here just uefacom).
 *   Facebook Like box Theme - Choose theme for your Facebook Like box
 *   Facebook Like box Border Color - Type the Border Color of your Facebook Like box
 *   Show Facebook Like box border - Hide or show Facebook like box border.

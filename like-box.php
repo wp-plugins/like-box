@@ -3,7 +3,7 @@
 Plugin Name: Facebook Like Box
 Plugin URI: https://wordpress.org/plugins/like-box
 Description: Our Facebook like box plugin will help you to display Facebook like box on your wesite, just add Facebook Like box widget to your sidebar and use it. Also you can use Facebook Like box on your pages/posts and create Facebook Like box popup for your website.
-Version: 0.5.0
+Version: 0.5.1
 Author: smplug-in
 Author URI: wordpress.org
 License: GPL3
@@ -87,7 +87,7 @@ class like_box_facbook extends WP_Widget {
           <input id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $instance['title']; ?>" class="widefat">
         </p>
         <p class="flb_field">
-          <label for="<?php echo $this->get_field_id('profile_id'); ?>">Page ID:</label>
+          <label for="<?php echo $this->get_field_id('profile_id'); ?>">Page ID(URL):</label>
           <br>
           <input id="<?php echo $this->get_field_id('profile_id'); ?>" name="<?php echo $this->get_field_name('profile_id'); ?>" type="text" value="<?php echo $instance['profile_id']; ?>" class="widefat">
         </p>
@@ -198,7 +198,7 @@ function like_box_window_insert_content(){
         
         <div id="miain_like_box_window_manager">	
 
-          <label for="like_box_profile_id">Page ID:</label>
+          <label for="like_box_profile_id">Page ID(URL):</label>
           <br>
           <input id="like_box_profile_id" type="text" value="<?php echo $instance['profile_id']; ?>" class="widefat">
         
@@ -432,7 +432,7 @@ function facbook_like_box_menu(){
                 
                 <tr>
                     <td>       
-                        <label class="like_box_titile">Page ID:</label>
+                        <label class="like_box_titile">Page ID(URL):</label>
                         <br>
                         <input id="like_box_profile_id" type="text" placeholder="Example: uefachampionsleague" size="30" value="<?php echo $instance['like_box_profile_id']; ?>" >
                     </td>
