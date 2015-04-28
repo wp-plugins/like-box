@@ -86,7 +86,7 @@ Dear users, we also recommend you to take a look for this useful plugins - [Word
 4.  WordPress Facebook like box Front-end - Sticky box
 5.  WordPress Facebook Like box Back-end - Widget
 6.  WordPress Facebook Like box Back-end - Post/Page  
-7.  WordPress Facebook Like box Back-end - Popup and Sticky box  
+7.  WordPress Facebook Like box Back-end - Popup and Sticky box 
 
 == Changelog ==
 
