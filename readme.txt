@@ -50,7 +50,7 @@ You can upgrade WordPress Facebook like box plugin to [Facebook like box Pro](ht
 
 ### If you found any bug in our WordPress Facebook like box plugin or have a question contact us at support@wpdevart.com.
 
-Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2) .
+Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/), [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown) .
 
 == Installation ==
 
@@ -64,7 +64,7 @@ Dear users, we also recommend you to take a look for this useful plugins - [Word
 6. Add Facebook like box Popup from admin panel.
 7. Add Facebook Sticky box from admin panel. 
 
-Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/),  [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2) .
+Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/),  [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown) .
 
 == Frequently Asked Questions ==
 
@@ -76,7 +76,7 @@ Our Facebook Like Box is user friendly plugin, but here you can see some frequen
 2. Your Facebook fan page doesn't allow unsigned user see your Facebook fan page, so you must change it to public access. Take a look how change your Facebook page to public access here - https://www.facebook.com/help/community/question/?id=10151458855783663.
 3. Clear your website cache(If you use cache plugin, then just clear the cache from your plugin).
 
-Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/),  [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2) .
+Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/),  [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown) .
 
 == Screenshots ==
 
@@ -174,4 +174,4 @@ Then just set up options for Facebook like box Popup and Sticky Facebook box.
 *   Show/Hide latest posts - Show/Hide the latest posts from your Facebook Like box
 *   Like box language -  Type the Facebook Like box language code
 
-Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/),  [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2) .
+Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/),  [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown) .
