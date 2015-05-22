@@ -1,6 +1,6 @@
 === Facebook Like Box ===
 Contributors: smplug-in
-Tags: Facebook, facebook badge, facebook connect, Facebook fan page, facebook group, facebook integration, facebook like box, Facebook like widget, facebook meta, facebook meta tag, Facebook Open Graph, Facebook Page, facebook platform, facebook plugin, facebook recommend, facebook share, facebook sidebar, facebook style, facebook wall, Facebook Widget, friends, google +1, google plus, google plus one, Like, like box, open graph, page, plugin, post to facebook, sharebar, sidebar, social, Social Plugins, social profiles, social share, social sidebar, wordpress like, seo, meta, Facebook like box widget, facebook like,  facebook like button, facebook button, facebook facepile, like box facebook, like box widget, facebook likebox, facebook like box shortcode, likebox, wordpress facebook like box, facebook like box in PopUp, facebook likebox widget, nice facebook like box, custom facebook likebox, rt facebook like box, advanced responsive facebook likebox, fb like box, facebook like box shortcodes, like box sidebox   
+Tags: Facebook, Facebook fan page, facebook like box, Facebook like widget, Facebook Open Graph, Facebook Page, facebook plugin, facebook wall, Facebook Widget, Facebook like box widget, like box facebook, wordpress facebook like box,
 Requires at least: 2.9
 Tested up to: 4.2
 Stable tag: 0.5.2
@@ -59,12 +59,12 @@ Dear users, we also recommend you to take a look for this useful plugins - [Word
 1. Download [WordPress Facebook like box](https://wordpress.org/plugins/like-box/) plugin.   
 2. Upload the Facebook like box plugin from your admin panel.    
 3. Activate the Facebook like box plugin. 
-4. Add Facebook like box widget to your sidebar.   
-5. Add Facebook like box in posts/pages using shortcode button.  
-6. Add Facebook like box Popup from admin panel.
+4. Then, add Facebook like box widget to your sidebar.   
+5. Add Like box in posts/pages using shortcode button.  
+6. Then, add Facebook like box Popup from admin panel.
 7. Add Facebook Sticky box from admin panel. 
 
-Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/),  [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown) .
+Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/),  [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2) .
 
 == Frequently Asked Questions ==
 
@@ -85,8 +85,8 @@ Dear users, we also recommend you to take a look for this useful plugins - [Word
 3.  WordPress Facebook like box Front-end - Popup Like Box
 4.  WordPress Facebook like box Front-end - Sticky box
 5.  WordPress Facebook Like box Back-end - Widget
-6.  WordPress Facebook Like box Back-end - Post/Page  
-7.  WordPress Facebook Like box Back-end - Popup and Sticky box 
+6.  WordPress Facebook Like box Back-end - Posts/Pages admin page  
+7.  WordPress Facebook Like box Back-end - Popup and Sticky box  
 
 == Changelog ==
 
@@ -100,7 +100,7 @@ Dear users, we also recommend you to take a look for this useful plugins - [Word
 
 = 0.5.2 =
 
-*  Added a lot of new features. 
+*  Added a lot of useful features. 
 
 ==Wordpress Facebook like box step by step guide==
 
@@ -174,4 +174,4 @@ Then just set up options for Facebook like box Popup and Sticky Facebook box.
 *   Show/Hide latest posts - Show/Hide the latest posts from your Facebook Like box
 *   Like box language -  Type the Facebook Like box language code
 
-Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/),  [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown) .
+Dear users, we also recommend you to take a look for this useful plugins - [WordPress Maintenance mode plugin](https://wordpress.org/plugins/coming-soon-page/), [WordPress Poll plugin](https://wordpress.org/plugins/polls-widget/),  [WordPress Lightbox](https://wordpress.org/plugins/wp-lightbox-2), [WordPress Countdown plugin](https://wordpress.org/plugins/widget-countdown) . .
